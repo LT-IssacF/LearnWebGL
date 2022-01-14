@@ -11,7 +11,7 @@ var FSHADER_SOURCE =
 'precision mediump float;\n' +
 'uniform vec4 u_FragColor;\n' +
 'void main() {\n' +
- '   gl_FragColor = u_FragColor;\n' +
+'   gl_FragColor = u_FragColor;\n' +
 '   }\n';
 
 function main() {
