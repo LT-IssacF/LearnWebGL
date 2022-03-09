@@ -5,14 +5,14 @@ var VSHADER_SOURCE =
 'void main() {\n' +
 '   gl_Position = a_Position;\n' +
 '   gl_PointSize = a_PointSize;\n' +
-'   }\n';
+'}\n';
 // 片元着色器
 var FSHADER_SOURCE =
 'precision mediump float;\n' +
 'uniform vec4 u_FragColor;\n' +
 'void main() {\n' +
 '   gl_FragColor = u_FragColor;\n' +
-'   }\n';
+'}\n';
 
 function main() {
     // 获取<canvas>元素
@@ -50,7 +50,7 @@ function click(ev, gl, canvas, a_Position, u_FragColor) {
     y = (canvas.height / 2 - (y - rect.top)) / (canvas.height / 2);
     g_points.push([x, y]);
     // 根据点在绘图区域不同的位置决定点的颜色
-    if( x >= 0.0 && y >= 0.0 ) { // 第一象限
+    if(x >= 0.0 && y >= 0.0) { // 第一象限
         g_colors.push([1.0, 0.0, 0.0, 1.0]);
     } else if(x > 0.0 && y < 0.0) { // 第二象限
         g_colors.push([0.0, 1.0, 0.0, 1.0]);
