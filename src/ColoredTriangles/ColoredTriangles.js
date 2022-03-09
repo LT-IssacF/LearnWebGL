@@ -6,14 +6,14 @@ var VSHADER_SOURCE =
 'void main() {\n' +
 '   gl_Position = u_ModelMatrix * a_Position;\n' +
 '   v_Color = a_Color;\n' +
-'   }\n';
+'}\n';
 
 var FSHADER_SOURCE =
 'precision mediump float;\n' +
 'varying vec4 v_Color;\n' +
 'void main() {\n' +
 '   gl_FragColor = v_Color;\n' +
-'   }\n';
+'}\n';
 // 旋转速度
 var ANGLE_STEP = 60.0;
 
