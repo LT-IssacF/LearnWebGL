@@ -10,12 +10,12 @@ var VSHADER_SOURCE =
 'uniform mat4 u_xformMatrix3;\n' +
 'void main() {\n' +
 '   gl_Position = u_xformMatrix3 * (u_xformMatrix2 * (u_xformMatrix * a_Position));\n' +
-'   }\n'; // 注意运算顺序
+'}\n'; // 注意运算顺序
 
 var FSHADER_SOURCE =
 'void main() {\n' +
 '   gl_FragColor = vec4(0.0, 0.0, 1.0, 1.0);\n' +
-'   }\n';
+'}\n';
 
 var Tx = 0.0, Ty = 0.25, Tz = 0.0; // 平移距离
 var ANGLE = 180.0; // 旋转角度
